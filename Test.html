@@ -23,12 +23,12 @@
                 tmp++;
             }
         }
-        console.log("So nhung so chia het cho 3 va 4 la: "+tmp);
+        console.log("So nhung so chia het cho 3 va 4 la: " + tmp);
 
         //in ra day fibo
         var arrNumber = [];
-       for (let index = 0; index <= n; index++) {
-            if (fibonaci(index)<=n) {
+        for (let index = 0; index <= n; index++) {
+            if (fibonaci(index) <= n) {
                 arrNumber.push(fibonaci(index));
             }
             
@@ -38,7 +38,7 @@
         // in ra day fibo
         var arrNumber = [];
         for (let index = 0; index <= n; index++) {
-            if (fibo(index)<= n) {
+            if (fibo(index) <= n) {
                 arrNumber.push(fibo(index));
             }else {
                 break;
@@ -48,11 +48,11 @@
 
         //check so nguyen to
 		function isPrime(number) {
-			if (number<2) {
+			if (number < 2) {
 				return false;
 			}
 			for (var i = 2; i <= Math.sqrt(number); i++) {
-				if (number%i==0) {
+				if (number%i == 0) {
 					return false;
 				}
 			}
@@ -61,7 +61,7 @@
         
         // check so chia het cho 3 va 4
         function div34(number){
-            if (number%3==0 && number%4==0) {
+            if (number%3 == 0 && number%4 == 0) {
                 return true;
             }
             return false;
@@ -69,8 +69,8 @@
 
         // day fibo
         function fibonaci(number) {
-            var f0 =0, f1= 1, fn =1;
-            if (number == 0 || number ==1) {
+            var f0 = 0, f1 = 1, fn = 1;
+            if (number == 0 || number == 1) {
                 return number;
             }else {
                 for (let index = 2; index < number; index++) {
@@ -85,7 +85,7 @@
         // day fibo
         function fibo(number) {
             if (number == 0||number == 1  ) return number;
-            else return fibo( number -1)+ fibo(number -2);
+            else return fibo( number - 1) + fibo(number - 2);
         }
 	</script>
 </body>
