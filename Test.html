@@ -8,6 +8,7 @@
 	<script type="text/javascript">
         var n = 50;
         var arrNumber = [];
+
         // in ra so nguyen to tu 0-n
 		for (var i = 0; i <= n; i++) {
 			if (isPrime(i)) {
@@ -85,7 +86,9 @@
         // day fibo
         function fibo(number) {
             if (number == 0||number == 1  ) return number;
-            else return fibo( number - 1) + fibo(number - 2);
+            else {
+                return fibo( number - 1) + fibo(number - 2);
+            }
         }
 	</script>
 </body>
