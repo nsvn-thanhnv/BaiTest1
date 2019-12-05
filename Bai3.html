@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Bai 3</title>
+</head>
+
+<body>
+    <script>
+        var n = 50;
+        // in ra day fibo bang vong for
+        var arrNumber = [];
+        for (let index = 0; index <= n; index++) {
+            if (fibo(index) <= n) {
+                arrNumber.push(fibo(index));
+            } else {
+                break;
+            }
+        }
+        console.log(arrNumber);
+
+        // in ra day fibo bang vong while
+        var arrNumber = [];
+        let index1 = 0;
+        while (index1 <= n) {
+            if (fibo(index1) <= n) {
+                arrNumber.push(fibo(index1));
+            } else {
+                break;
+            }
+            index1++;
+        }
+        console.log(arrNumber);
+
+        // day fibo
+        function fibo(number) {
+            if (number == 0 || number == 1) return number;
+            else return fibo(number - 1) + fibo(number - 2);
+        }
+    </script>
+</body>
+
+</html>
